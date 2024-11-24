@@ -61,23 +61,23 @@ public class Main {
             var opcao = scanner.nextInt();
 
             switch (opcao) {
-                case 1: // Adicionar saldo
+                case 1: 
                     System.out.print("Digite o valor para adicionar ao saldo: ");
                     double valorAdicionar = scanner.nextDouble();
                     carteira.adicionarSaldo(valorAdicionar);
                     break;
-                case 2: // Realizar pagamento
+                case 2: 
                     System.out.print("Digite o valor do pagamento: ");
                     double valorPagamento = scanner.nextDouble();
                     carteira.realizarPagamento(valorPagamento);
                     break;
-                case 3: // Verificar saldo
+                case 3: 
                     carteira.verificarSaldo();
                     break;
-                case 4: // Histórico de transações
+                case 4: 
                     carteira.historicoTransacoes();
                     break;
-                case 5: // Sair
+                case 5: 
                     System.out.println("Obrigado por usar a sua Carteira Digital!");
                     scanner.close();
                     return;
